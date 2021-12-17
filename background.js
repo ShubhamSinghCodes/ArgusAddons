@@ -15,7 +15,8 @@ function change() {
         var arrayLength = main.length;
         for (var i = 0; i < arrayLength; i++) {
           	replaceHTML(i);
-        }
+		}
+    }
 	if (window.location.href == 'https://euro.learnindialearn.in/game') {
         var main = document.getElementsByClassName("jss12");
         function replaceHTML(i) {
