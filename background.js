@@ -19,7 +19,7 @@ function change() {
     }
 }
 if (window.location.href == 'https://euro.learnindialearn.in/game') {
-        var main = document.getElementsByClassName("jss12");
+	var main = document.getElementsByClassName("jss12");
         function replaceHTML(i) {
                	main[i].innerHTML = '<iframe src="https://scratch.mit.edu/projects/354743956/embed" allowtransparency="true" width="-webkit-fill-available" height="-webkit-fill-available" frameborder="0" scrolling="no" allowfullscreen></iframe>'
         }
@@ -27,7 +27,7 @@ if (window.location.href == 'https://euro.learnindialearn.in/game') {
         for (var i = 0; i < arrayLength; i++) {
            	replaceHTML(i);
         }
-    }
+}
 change()
 setInterval( function(){ 
 	try {
