@@ -1,4 +1,5 @@
 console.log('Hello world');
+console.log(window.location.href);
 function change() {
     var sidebar = document.getElementsByClassName("MuiList-root jss15 MuiList-padding");
     function replaceHTML(i) {
