@@ -1,0 +1,15 @@
+{
+  "name": "ArgusAddons",
+  "version": "1.0",
+  "description": "Redesigning Argus",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+        "matches": ["https://euro.learnindialearn.in/*","http://argusaddons.pythonanywhere.com/"],
+        "js": ["/background.js"]
+    }
+]
+}
