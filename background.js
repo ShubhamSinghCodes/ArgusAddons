@@ -19,6 +19,7 @@ function change() {
         if (window.location.href == 'http://argusaddons.pythonanywhere.com/') {
             var main = document.getElementById('addoncheck');
             main.innerHTML = '<span style="color: #00ff00;">Yes, ArgusAddons <em><strong>is</strong></em> installed.</span>';
+            console.log("Yay, ArgusAddons is installed!");
         }
         if (window.location.href == 'https://euro.learnindialearn.in/game') {
             var main = document.getElementsByClassName("jss12");
