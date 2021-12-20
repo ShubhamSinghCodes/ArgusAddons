@@ -1,5 +1,10 @@
 console.log('Hello world');
 console.log(window.location.href);
+if (window.location.href == 'http://argusaddons.pythonanywhere.com/') {
+    var main = document.getElementById('addoncheck');
+    main.innerHTML = '<span style="color: #00ff00;">Yes, ArgusAddons <em><strong>is</strong></em> installed.</span>';
+    console.log("Yay, ArgusAddons is installed!");
+}
 function change() {
     var sidebar = document.getElementsByClassName("MuiList-root jss15 MuiList-padding");
     function replaceHTML(i) {
