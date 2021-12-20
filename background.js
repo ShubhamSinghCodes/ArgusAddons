@@ -10,7 +10,7 @@ function change() {
 	if (window.location.href == 'https://euro.learnindialearn.in/none') {
         var main = document.getElementsByClassName("jss12");
         function replaceHTML(i) {
-               	main[i].innerHTML = ''
+               	main[i].innerHTML = '';
         }
         var arrayLength = main.length;
         for (var i = 0; i < arrayLength; i++) {
@@ -18,12 +18,12 @@ function change() {
 		}
 	if (window.location.href == 'http://argusaddons.pythonanywhere.com/') {
         var main = document.getElementById('addoncheck');
-	main.innerHTML = '<span style="color: #00ff00;">Yes, ArgusAddons <em><strong>is</strong></em> installed.</span>'
+	main.innerHTML = '<span style="color: #00ff00;">Yes, ArgusAddons <em><strong>is</strong></em> installed.</span>';
 	if (window.location.href == 'https://euro.learnindialearn.in/game') {
 	var main = document.getElementsByClassName("jss12");
         function replaceHTML(i) {
-               	main[i].innerHTML = '<iframe src="https://scratch.mit.edu/projects/354743956/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="" style="height: 170%;width: 170%;"></iframe>'
-		main[i].classList.remove("jss12")
+               	main[i].innerHTML = '<iframe src="https://scratch.mit.edu/projects/354743956/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="" style="height: 170%;width: 170%;"></iframe>';
+		main[i].classList.remove("jss12");
         }
         var arrayLength = main.length;
         for (var i = 0; i < arrayLength; i++) {
@@ -31,8 +31,9 @@ function change() {
         }
 }
     }
+  }
 }
-change()
+change();
 setInterval( function(){ 
 	try {
 		var elem = document.getElementById('busy-indicator');
