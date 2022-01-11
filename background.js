@@ -1,4 +1,10 @@
 console.log('Hello world');
+var s = document.createElement('script');
+s.src = chrome.extension.getURL('injected.js');
+s.onload = function() {
+    this.remove();
+};
+(document.head || document.documentElement).appendChild(s);
 console.log(window.location.href);
 if (window.location.href == 'http://argusaddons.pythonanywhere.com/' || window.location.href == 'https://argusaddons.pythonanywhere.com/') {
     var main = document.getElementById('addoncheck');
