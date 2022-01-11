@@ -18,6 +18,5 @@
         "run_at": "document_start",
         "js": ["/background.js"]
     }
-  ],
-  "web_accessible_resources": ["injected.js"]
+  ]
 }
