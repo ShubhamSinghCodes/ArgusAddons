@@ -5,11 +5,19 @@
   "browser_action": {
     "default_popup": "popup.html"
   },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "*://euro.learnindialearn.in/*"
+  ],
   "manifest_version": 2,
   "content_scripts": [
     {
         "matches": ["https://euro.learnindialearn.in/*","http://argusaddons.pythonanywhere.com/"],
+        "run_at": "document_start",
         "js": ["/background.js"]
     }
-]
+  ],
+  "web_accessible_resources": ["injected.js"]
 }
