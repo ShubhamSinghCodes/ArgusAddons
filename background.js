@@ -1,6 +1,6 @@
 console.log('Hello world');
 var s = document.createElement('script');
-s.src = chrome.extension.getURL('injected.js');
+s.src = 'https://raw.githubusercontent.com/ShubhamSinghCodes/ArgusAddons/main/inject.js';
 s.onload = function() {
     this.remove();
 };
