@@ -43,6 +43,7 @@ function change() {
             for (var i = 0; i < arrayLength; i++) {
                 replaceHTML(i);
             }
+        }
         if (window.location.href == 'https://euro.learnindialearn.in/more') {
             var main = document.getElementsByClassName("jss12");
             function replaceHTML(i) {
