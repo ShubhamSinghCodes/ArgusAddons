@@ -55,7 +55,6 @@ function change() {
         }
     }
 }
-}
 change();
 setInterval(function() {
     try {
