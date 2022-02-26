@@ -11,6 +11,7 @@ if (window.location.href == 'http://argusaddons.pythonanywhere.com/' || window.l
     main.innerHTML = '<span style="color: #00ff00;">Yes, ArgusAddons <em><strong>is</strong></em> installed.</span>';
     console.log("Yay, ArgusAddons is installed!");
 }
+game="jss12"
 function change() {
     var sidebar = document.getElementsByClassName("MuiList-root jss15 MuiList-padding");
     function replaceHTML(i) {
@@ -35,10 +36,10 @@ function change() {
         console.log("Yay, ArgusAddons is installed!");
     }
     if (window.location.href == 'https://euro.learnindialearn.in/game') {
-        var main = document.getElementsByClassName("jss12");
+        var main = document.getElementsByClassName(game);
         function replaceHTML(i) {
             main[i].innerHTML = '<iframe src="https://scratch.mit.edu/projects/60917032/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="true" style="height: -webkit-fill-available;width: -webkit-fill-available;"></iframe>';
-            main[i].classList.remove('jss12');
+            game=""
         }
         var arrayLength = main.length;
         for (var i = 0; i < arrayLength; i++) {
