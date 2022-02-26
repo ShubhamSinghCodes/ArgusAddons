@@ -28,32 +28,33 @@ function change() {
         for (var i = 0; i < arrayLength; i++) {
             replaceHTML(i);
         }
-        if (window.location.href == 'http://argusaddons.pythonanywhere.com/') {
-            var main = document.getElementById('addoncheck');
-            main.innerHTML = '<span style="color: #00ff00;">Yes, ArgusAddons <em><strong>is</strong></em> installed.</span>';
-            console.log("Yay, ArgusAddons is installed!");
+    }
+    if (window.location.href == 'http://argusaddons.pythonanywhere.com/') {
+        var main = document.getElementById('addoncheck');
+         main.innerHTML = '<span style="color: #00ff00;">Yes, ArgusAddons <em><strong>is</strong></em> installed.</span>';
+        console.log("Yay, ArgusAddons is installed!");
+    }
+    if (window.location.href == 'https://euro.learnindialearn.in/game') {
+        var main = document.getElementsByClassName("jss12");
+        function replaceHTML(i) {
+            main[i].innerHTML = '<iframe src="https://scratch.mit.edu/projects/354743956/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="" style="height: 170%;width: 170%;"></iframe>';
         }
-        if (window.location.href == 'https://euro.learnindialearn.in/game') {
-            var main = document.getElementsByClassName("jss12");
-            function replaceHTML(i) {
-                main[i].innerHTML = '<iframe src="https://scratch.mit.edu/projects/354743956/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="" style="height: 170%;width: 170%;"></iframe>';
-            }
-            var arrayLength = main.length;
-            for (var i = 0; i < arrayLength; i++) {
-                replaceHTML(i);
-            }
-        }
-        if (window.location.href == 'https://euro.learnindialearn.in/more') {
-            var main = document.getElementsByClassName("jss12");
-            function replaceHTML(i) {
-                main[i].innerHTML = '<h1>Parent Argus links:</h1><p><a href="/parentDashboard">Dashboard</a></p><p><a href="/parentCorner">Parent Corner</a></p><p><a href="/learningAnalytics">Learning Analytics</a></p><p><a href="/assignment/homework">Homework</a></p><p><a href="/assesment">Exam report</a></p><p><a href="/teacher-detail">Teacher Detail</a></p><p><a href="/report-card">Report Card</a></p>';
-            }
-            var arrayLength = main.length;
-            for (var i = 0; i < arrayLength; i++) {
-                replaceHTML(i);
-            }
+        var arrayLength = main.length;
+        for (var i = 0; i < arrayLength; i++) {
+            replaceHTML(i);
         }
     }
+    if (window.location.href == 'https://euro.learnindialearn.in/more') {
+        var main = document.getElementsByClassName("jss12");
+        function replaceHTML(i) {
+            main[i].innerHTML = '<h1>Parent Argus links:</h1><p><a href="/parentDashboard">Dashboard</a></p><p><a href="/parentCorner">Parent Corner</a></p><p><a href="/learningAnalytics">Learning Analytics</a></p><p><a href="/assignment/homework">Homework</a></p><p><a href="/assesment">Exam report</a></p><p><a href="/teacher-detail">Teacher Detail</a></p><p><a href="/report-card">Report Card</a></p>';
+        }
+        var arrayLength = main.length;
+        for (var i = 0; i < arrayLength; i++) {
+            replaceHTML(i);
+        }
+    }
+}
 }
 change();
 setInterval(function() {
