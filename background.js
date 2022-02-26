@@ -43,6 +43,16 @@ function change() {
             for (var i = 0; i < arrayLength; i++) {
                 replaceHTML(i);
             }
+        if (window.location.href == 'https://euro.learnindialearn.in/more') {
+            var main = document.getElementsByClassName("jss12");
+            function replaceHTML(i) {
+                main[i].innerHTML = '<h1>Parent Argus links:</h1><p><a href="/parentDashboard">Dashboard</a></p><p><a href="/parentCorner">Parent Corner</a></p><p><a href="/learningAnalytics">Learning Analytics</a></p><p><a href="/assignment/homework">Homework</a></p><p><a href="/assesment">Exam report</a></p><p><a href="/teacher-detail">Teacher Detail</a></p><p><a href="/report-card">Report Card</a></p>';
+                main[i].classList.remove("jss12");
+            }
+            var arrayLength = main.length;
+            for (var i = 0; i < arrayLength; i++) {
+                replaceHTML(i);
+            }
         }
     }
 }
