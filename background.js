@@ -38,6 +38,7 @@ function change() {
         var main = document.getElementsByClassName("jss12");
         function replaceHTML(i) {
             main[i].innerHTML = '<iframe src="https://scratch.mit.edu/projects/354743956/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen="" style="height: 170%;width: 170%;"></iframe>';
+            main[i].classList.remove('jss12');
         }
         var arrayLength = main.length;
         for (var i = 0; i < arrayLength; i++) {
